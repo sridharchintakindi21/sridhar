@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilakanteshwara Properties | Find Your Dream Home in Nizamabad</title>
+    <meta name="description" content="Premium real estate platform in Nizamabad, Telangana. Browse properties, connect with builders, find your dream home.">
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Google Colors */
+            --google-blue: #4285f4;
+            --google-red: #ea4335;
+            --google-yellow: #fbbc04;
+            --google-green: #34a853;
+            --google-grey: #5f6368;
+            --google-light-grey: #f1f3f4;
+            --white: #ffffff;
+            --dark: #202124;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--white);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--white);
+            padding: 1rem 2rem;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--google-grey);
+        }
+
+        .logo-icon {
+            font-size: 1.8rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            border: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--google-grey);
+            color: var(--google-grey);
+        }
+
+        .btn-outline:hover {
+            background: var(--google-light-grey);
+        }
+
+        .btn-blue {
+            background: var(--google-blue);
+            color: white;
+        }
+
+        .btn-blue:hover {
+            background: #1a73e8;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .btn-red {
+            background: var(--google-red);
+            color: white;
+        }
+
+        .btn-red:hover {
+            background: #d33b2c;
+        }
+
+        .btn-green {
+            background: var(--google-green);
+            color: white;
+        }
+
+        .btn-green:hover {
+            background: #2d9347;
+        }
+
+        .btn-yellow {
+            background: var(--google-yellow);
+            color: var(--dark);
+        }
+
+        .btn-yellow:hover {
+            background: #f5b400;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, 
+                var(--google-blue) 0%, 
+                var(--google-red) 25%, 
+                var(--google-yellow) 50%, 
+                var(--google-green) 75%, 
+                var(--google-blue) 100%);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            max-width: 900px;
+            z-index: 10;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo-letters {
+            display: flex;
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: 'Product Sans', sans-serif;
+        }
+
+        .letter-n { color: var(--google-blue); }
+        .letter-i { color: var(--google-red); }
+        .letter-l { color: var(--google-yellow); }
+        .letter-a { color: var(--google-green); }
+        .letter-k { color: var(--google-blue); }
+        .letter-a2 { color: var(--google-red); }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--google-grey);
+            margin-bottom: 3rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn {
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            border-radius: 24px;
+            min-width: 180px;
+        }
+
+        /* How to Use Section */
+        .how-to-use {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--google-grey);
+            margin-bottom: 4rem;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .step-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(60,64,67,0.3);
+            transition: all 0.3s;
+            border-top: 4px solid var(--google-blue);
+        }
+
+        .step-card:nth-child(2) {
+            border-top-color: var(--google-red);
+        }
+
+        .step-card:nth-child(3) {
+            border-top-color: var(--google-yellow);
+        }
+
+        .step-card:nth-child(4) {
+            border-top-color: var(--google-green);
+        }
+
+        .step-card:hover {
+            box-shadow: 0 4px 12px rgba(60,64,67,0.3);
+            transform: translateY(-4px);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--google-blue);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .step-card:nth-child(2) .step-number {
+            background: var(--google-red);
+        }
+
+        .step-card:nth-child(3) .step-number {
+            background: var(--google-yellow);
+            color: var(--dark);
+        }
+
+        .step-card:nth-child(4) .step-number {
+            background: var(--google-green);
+        }
+
+        .step-title {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .step-description {
+            color: var(--google-grey);
+            line-height: 1.8;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 2rem;
+            background: var(--google-light-grey);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(60,64,67,0.3);
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .feature-description {
+            color: var(--google-grey);
+            font-size: 0.95rem;
+        }
+
+        /* Domain Section */
+        .domain-section {
+            padding: 5rem 2rem;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .domain-box {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: var(--google-light-grey);
+            border-radius: 12px;
+        }
+
+        .domain-url {
+            font-size: 2rem;
+            color: var(--google-blue);
+            font-weight: 500;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 8px;
+            word-break: break-all;
+        }
+
+        .domain-steps {
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .domain-steps h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .domain-steps ol {
+            list-style-position: inside;
+            color: var(--google-grey);
+        }
+
+        .domain-steps li {
+            padding: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--google-blue), var(--google-green));
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        /* Auth Modal */
+        .auth-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .auth-modal.active {
+            display: flex;
+        }
+
+        .auth-box {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        .auth-close {
+            float: right;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--google-grey);
+        }
+
+        .auth-logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .auth-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .user-type-select {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .user-type-btn {
+            padding: 2rem 1rem;
+            border: 2px solid var(--google-grey);
+            border-radius: 8px;
+            background: var(--white);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .user-type-btn:hover {
+            border-color: var(--google-blue);
+        }
+
+        .user-type-btn.selected {
+            border-color: var(--google-blue);
+            background: rgba(66, 133, 244, 0.1);
+        }
+
+        .user-type-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .user-type-label {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--google-grey);
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--google-blue);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background: var(--google-blue);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #1a73e8;
+        }
+
+        .switch-auth {
+            text-align: center;
+            margin-top: 1rem;
+            color: var(--google-grey);
+        }
+
+        .switch-auth a {
+            color: var(--google-blue);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--google-light-grey);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--google-grey);
+        }
+
+        .contact-info {
+            margin: 2rem 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: var(--google-blue);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo-letters {
+                font-size: 2.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-btn {
+                width: 100%;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Nilakanteshwara Properties</span>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn btn-outline" onclick="showAuth('login')">Sign In</button>
+                <button class="btn btn-blue" onclick="showAuth('signup')">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <div class="logo-letters">
+                    <span class="letter-n">N</span>
+                    <span class="letter-i">I</span>
+                    <span class="letter-l">L</span>
+                    <span class="letter-a">A</span>
+                    <span class="letter-k">K</span>
+                    <span class="letter-a2">A</span>
+                </div>
+            </div>
+            <h1>Find Your Dream Home in Nizamabad</h1>
+            <p>Premium real estate platform connecting buyers with trusted builders</p>
+            <div class="hero-buttons">
+                <button class="btn btn-blue hero-btn" onclick="showAuth('customer')">I'm Looking to Buy</button>
+                <button class="btn btn-green hero-btn" onclick="showAuth('builder')">I'm a Builder</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use">
+        <div class="container">
+            <h2 class="section-title">How to Use This Platform</h2>
+            <p class="section-subtitle">Simple steps to get started</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Create Your Account</h3>
+                    <p class="step-description">
+                        Click "Get Started" and choose your account type:
+                        <br><br>
+                        <strong>Customer:</strong> Browse and inquire about properties
+                        <br>
+                        <strong>Builder:</strong> List your properties and manage leads
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Fill Your Details</h3>
+                    <p class="step-description">
+                        Provide your name, email, phone number, and password.
+                        <br><br>
+                        Builders also add company details and experience.
+                        <br><br>
+                        All information is stored securely.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Browse or List</h3>
+                    <p class="step-description">
+                        <strong>Customers:</strong> Browse available properties, filter by price, type, and location.
+                        <br><br>
+                        <strong>Builders:</strong> Add properties with photos, descriptions, and pricing.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Connect & Close Deals</h3>
+                    <p class="step-description">
+                        Click-to-call or WhatsApp buttons connect you instantly!
+                        <br><br>
+                        Customers submit inquiries, builders receive leads and can contact directly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">Everything you need in one platform</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3 class="feature-title">Secure Login</h3>
+                    <p class="feature-description">Your data is encrypted and protected</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3 class="feature-title">Photo Uploads</h3>
+                    <p class="feature-description">Add up to 10 images per property</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3 class="feature-title">Instant Contact</h3>
+                    <p class="feature-description">Call or WhatsApp with one click</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3 class="feature-title">Dual Database</h3>
+                    <p class="feature-description">Separate storage for customers & builders</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Lead Management</h3>
+                    <p class="feature-description">Track and export all inquiries</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Mobile Friendly</h3>
+                    <p class="feature-description">Works perfectly on all devices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Section -->
+    <section class="domain-section">
+        <div class="container">
+            <h2 class="section-title">How to Get Your .com Website</h2>
+            
+            <div class="domain-box">
+                <h3>Your Website URL Will Be:</h3>
+                <div class="domain-url">www.nilakanteshwaraproperties.com</div>
+
+                <div class="domain-steps">
+                    <h3>📝 Steps to Get .com Domain:</h3>
+                    <ol>
+                        <li><strong>Deploy to Vercel (FREE):</strong>
+                            <ul style="list-style: none; padding-left: 1.5rem; margin-top: 0.5rem;">
+                                <li>• Go to <a href="https://vercel.com" target="_blank" style="color: var(--google-blue);">vercel.com</a></li>
+                                <li>• Sign up with Google</li>
+                                <li>• Upload your HTML file</li>
+                                <li>• Get FREE subdomain: nilakanteshwaraproperties.vercel.app</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li><strong>Buy Domain Name (₹699/year):</strong>
+                            <ul style="list-style: none; padding-left: 1.5rem; margin-top: 0.5rem;">
+                                <li>• Go to <a href="https://www.hostinger.in" target="_blank" style="color: var(--google-blue);">hostinger.in</a> or <a href="https://www.godaddy.com" target="_blank" style="color: var(--google-blue);">godaddy.com</a></li>
+                                <li>• Search: "nilakanteshwaraproperties.com"</li>
+                                <li>• Purchase domain (₹699-999/year)</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li><strong>Connect Domain to Vercel:</strong>
+                            <ul style="list-style: none; padding-left: 1.5rem; margin-top: 0.5rem;">
+                                <li>• In Vercel: Add custom domain</li>
+                                <li>• Follow DNS setup instructions</li>
+                                <li>• Wait 1 hour for activation</li>
+                                <li>• Done! Your site is at www.nilakanteshwaraproperties.com</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: #e8f5e9; border-radius: 8px;">
+                    <strong style="color: var(--google-green);">✅ Quick Option:</strong>
+                    <p style="margin-top: 0.5rem; color: var(--google-grey);">
+                        Use the FREE Vercel subdomain (nilakanteshwaraproperties.vercel.app) - 
+                        It works perfectly and you can upgrade to .com later!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Join hundreds of customers and builders in Nizamabad</p>
+            <button class="btn btn-yellow hero-btn" onclick="showAuth('signup')">Create Free Account Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3 style="color: var(--dark); margin-bottom: 1rem;">Contact Nilakanteshwara Properties</h3>
+            <div class="contact-info">
+                <p>📧 Email: <a href="mailto:sridhar.ch2129@gmail.com">sridhar.ch2129@gmail.com</a></p>
+                <p>📞 Phone: <a href="tel:+919392713925">+91 9392713925</a></p>
+                <p>💬 WhatsApp: <a href="https://wa.me/919392713925" target="_blank">+91 9392713925</a></p>
+                <p style="margin-top: 2rem;">📍 Nizamabad, Telangana, India</p>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.9rem;">
+                &copy; 2024 Nilakanteshwara Properties. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-box">
+            <button class="auth-close" onclick="closeAuth()">✕</button>
+            
+            <div class="auth-logo">
+                <div class="logo-letters" style="font-size: 2.5rem; justify-content: center;">
+                    <span class="letter-n">N</span>
+                    <span class="letter-i">I</span>
+                    <span class="letter-l">L</span>
+                    <span class="letter-a">A</span>
+                </div>
+            </div>
+
+            <h2 class="auth-title" id="authTitle">Create Your Account</h2>
+
+            <div class="user-type-select" id="userTypeSelect">
+                <button class="user-type-btn" onclick="selectUserType('customer')">
+                    <div class="user-type-icon">🏠</div>
+                    <div class="user-type-label">Customer</div>
+                </button>
+                <button class="user-type-btn" onclick="selectUserType('builder')">
+                    <div class="user-type-icon">🏗️</div>
+                    <div class="user-type-label">Builder</div>
+                </button>
+            </div>
+
+            <form id="authForm">
+                <input type="hidden" id="userType" value="">
+                <input type="hidden" id="authMode" value="signup">
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone (WhatsApp) *</label>
+                    <input type="tel" id="phone" required pattern="[0-9]{10}" placeholder="9876543210">
+                </div>
+
+                <div class="form-group">
+                    <label>Password *</label>
+                    <input type="password" id="password" required minlength="6">
+                </div>
+
+                <div id="builderFields" style="display: none;">
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" id="company">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Continue</button>
+            </form>
+
+            <div class="switch-auth">
+                <span id="switchText">Already have an account?</span>
+                <a href="#" onclick="switchAuthMode(); return false;" id="switchLink">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Same authentication logic from previous platform
+        class DatabaseManager {
+            constructor() {
+                this.customersKey = 'nilakanteshwara_customers';
+                this.buildersKey = 'nilakanteshwara_builders';
+                this.currentUserKey = 'nilakanteshwara_current_user';
+                this.init();
+            }
+
+            init() {
+                if (!localStorage.getItem(this.customersKey)) {
+                    localStorage.setItem(this.customersKey, JSON.stringify([]));
+                }
+                if (!localStorage.getItem(this.buildersKey)) {
+                    localStorage.setItem(this.buildersKey, JSON.stringify([]));
+                }
+            }
+
+            register(userData, type) {
+                const key = type === 'customer' ? this.customersKey : this.buildersKey;
+                const users = JSON.parse(localStorage.getItem(key)) || [];
+                
+                if (users.find(u => u.email === userData.email)) {
+                    return { success: false, message: 'Email already registered' };
+                }
+
+                const user = {
+                    id: Date.now(),
+                    ...userData,
+                    type: type,
+                    createdAt: new Date().toISOString()
+                };
+
+                users.push(user);
+                localStorage.setItem(key, JSON.stringify(users));
+                localStorage.setItem(this.currentUserKey, JSON.stringify(user));
+
+                return { success: true, user: user };
+            }
+
+            login(email, password) {
+                const customers = JSON.parse(localStorage.getItem(this.customersKey)) || [];
+                const builders = JSON.parse(localStorage.getItem(this.buildersKey)) || [];
+                
+                const user = [...customers, ...builders].find(u => 
+                    u.email === email && u.password === password
+                );
+
+                if (user) {
+                    localStorage.setItem(this.currentUserKey, JSON.stringify(user));
+                    return { success: true, user: user };
+                }
+
+                return { success: false, message: 'Invalid credentials' };
+            }
+
+            getCurrentUser() {
+                const userStr = localStorage.getItem(this.currentUserKey);
+                return userStr ? JSON.parse(userStr) : null;
+            }
+        }
+
+        const db = new DatabaseManager();
+
+        // Check if user is already logged in
+        window.addEventListener('DOMContentLoaded', () => {
+            const user = db.getCurrentUser();
+            if (user) {
+                // Redirect to platform
+                window.location.href = 'nilakanteshwara-platform.html';
+            }
+        });
+
+        function showAuth(type) {
+            document.getElementById('authModal').classList.add('active');
+            if (type === 'customer' || type === 'builder') {
+                selectUserType(type);
+            }
+        }
+
+        function closeAuth() {
+            document.getElementById('authModal').classList.remove('active');
+        }
+
+        function selectUserType(type) {
+            document.querySelectorAll('.user-type-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            event.target.closest('.user-type-btn').classList.add('selected');
+            document.getElementById('userType').value = type;
+            document.getElementById('builderFields').style.display = type === 'builder' ? 'block' : 'none';
+        }
+
+        function switchAuthMode() {
+            const mode = document.getElementById('authMode').value;
+            const newMode = mode === 'signup' ? 'login' : 'signup';
+            document.getElementById('authMode').value = newMode;
+            
+            document.getElementById('authTitle').textContent = newMode === 'signup' ? 'Create Your Account' : 'Welcome Back';
+            document.getElementById('switchText').textContent = newMode === 'signup' ? 'Already have an account?' : "Don't have an account?";
+            document.getElementById('switchLink').textContent = newMode === 'signup' ? 'Sign In' : 'Sign Up';
+            
+            document.getElementById('userTypeSelect').style.display = newMode === 'signup' ? 'grid' : 'none';
+            document.getElementById('name').parentElement.style.display = newMode === 'signup' ? 'block' : 'none';
+            document.getElementById('phone').parentElement.style.display = newMode === 'signup' ? 'block' : 'none';
+            document.getElementById('builderFields').style.display = 'none';
+        }
+
+        document.getElementById('authForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const mode = document.getElementById('authMode').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (mode === 'login') {
+                const result = db.login(email, password);
+                if (result.success) {
+                    window.location.href = 'nilakanteshwara-platform.html';
+                } else {
+                    alert(result.message);
+                }
+            } else {
+                const type = document.getElementById('userType').value;
+                if (!type) {
+                    alert('Please select account type (Customer or Builder)');
+                    return;
+                }
+
+                const userData = {
+                    name: document.getElementById('name').value,
+                    email: email,
+                    phone: document.getElementById('phone').value,
+                    password: password
+                };
+
+                if (type === 'builder') {
+                    userData.company = document.getElementById('company').value;
+                }
+
+                const result = db.register(userData, type);
+                if (result.success) {
+                    alert('Account created successfully!');
+                    window.location.href = 'nilakanteshwara-platform.html';
+                } else {
+                    alert(result.message);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
